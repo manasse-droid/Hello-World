@@ -1,13 +1,15 @@
 class Square {
-	int x; 
-	String name; 
+	int x;  
 
-	public Square (int x, String name) {
+	public Square (int x) {
 		this.x = x;
-		this.name = name; 
+	}
+	
+	public int getside() {
+		return x;
 	}
 	
 	public static void main (String args[]) {
-		Square sq1 = new Square(6, "name");
+		Square sq1 = new Square(6);
 	}
 }
